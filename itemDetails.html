@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/itemDetails.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>LB</h1>
+            </div>
+            <nav>
+                <ul>
+                    <a href="index.html#home"><li>Home</li></a>
+                    <a href="index.html#trends"><li>Trends</li></a>
+                    <a href="search.html"><li>Products</li></a>
+                    <a href="login.html"><li>Login</li></a>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <a href="index.html#home"><li>Home</li></a>
+                    <a href="index.html#trend"><li>Trends</li></a>
+                    <a href="search.html"><li>Products</li></a>
+                    <a href="login.html"><li>Login</li></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="containerItemDetails">
+            <div id="itemPic">
+                
+            </div>
+
+            <div id="itemDetails">
+                <h1>60 Black T-Shirt</h1>
+                <div class="rating">
+                    <span id="stars">★★★★☆</span>
+                    <span>(120 reviews)</span>
+                </div>
+                <h2>$29.99</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                <div class="size">
+                    <span>Size</span>
+                    <div class="sizeBtnGrp">
+                        <button class="sizeBtn">S</button>
+                        <button class="sizeBtn">M</button>
+                        <button class="sizeBtn">L</button>
+                        <button class="sizeBtn">XL</button>
+                    </div>
+                </div>
+                <div class="btnGroup">
+                    <button class="btn">Add to Cart</button>
+                    <button class="hrtBtn"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

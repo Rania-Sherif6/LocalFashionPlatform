@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/search.css" />
+  </head>
+  <body>
+    <!-- hanhtag n add el back arrrow -->
+    <header>
+      <div class="container">
+        <div class="logo">LB</div>
+        <nav>
+          <ul>
+            <a href="index.html#home"><li>Home</li></a>
+            <a href="index.html#trend"><li>Trends</li></a>
+            <a href="search.html"><li>Products</li></a>
+            <a href="login.html"><li>Login</li></a>
+          </ul>
+        </nav>
+        <div class="back">
+          <a href="index.html">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="shop-section">
+      <div class="shop-header">
+        <span>Explore all</span>
+        <h1>OUR COLLECTION</h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+            onkeyup="searchProducts()"
+          />
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <div class="product-card" data-name="oversized t-shirt">
+          <div class="product-img">
+            <img src="img/jacket model 1.png" alt="Product" />
+          </div>
+          <div class="product-info">
+            <h3>Oversized T-Shirt</h3>
+            <span>500 EGP</span>
+            <div class="btn-container">
+              <button class="btn-primary">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="t-shirt3">
+          <div class="product-img">
+            <img src="img\tshirt3pp.png" alt="Product" />
+          </div>
+          <div class="product-info">
+            <h3>Black T-shirt</h3>
+            <span>500 EGP</span>
+            <button class="btn-primary">View Details</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="black T-shirt2">
+          <div class="product-img">
+            <img src="img\tshirt2pp.png" alt="Product" />
+          </div>
+          <div class="product-info">
+            <h3>Black T-shirt</h3>
+            <span>800 EGP</span>
+            <a href="itemDetails.html"><button class="btn-primary">View Details</button></a>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="black pants3">
+          <div class="product-img">
+            <img src="img\pants3.png" alt="Product" />
+          </div>
+          <div class="product-info">
+            <h3>Black Pants</h3>
+            <span>850 EGP</span>
+            <button class="btn-primary">View Details</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="black pants2">
+          <div class="product-img">
+            <img src="img\pants2.png" alt="Product" />
+          </div>
+          <div class="product-info">
+            <h3>Black Pants</h3>
+            <span>700 EGP</span>
+            <button class="btn-primary">View Details</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-name="black shoes3">
+          <div class="product-img">
+            <img src="img\shoes3.png" alt="Product" />
+          </div>
+          <div class="product-info">
+            <h3>Black Shoes</h3>
+            <span>850 EGP</span>
+            <button class="btn-primary">View Details</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function searchProducts() {
+        // Get the search input value and convert to lowercase
+        let input = document.getElementById("searchInput").value.toLowerCase();
+
+        // Get all product cards
+        let cards = document.getElementsByClassName("product-card");
+
+        for (let i = 0; i < cards.length; i++) {
+          // Get the product name from the data-name attribute
+          let name = cards[i].getAttribute("data-name");
+
+          // If the name matches the search input, show the card, otherwise hide it
+          if (name.includes(input)) {
+            cards[i].style.display = "block";
+          } else {
+            cards[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Brand</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>LB</h1>
+        </div>
+        <nav>
+          <ul>
+            <a href="index.html#home"><li>Home</li></a>
+            <a href="index.html#trend"><li>Trends</li></a>
+            <a href="search.html"><li>Products</li></a>
+            <a href="login.html"><li>Login</li></a>
+          </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu" id="menu">
+          <ul>
+            <a href="index.html#home"><li>Home</li></a>
+            <a href="index.html#trend"><li>Trends</li></a>
+            <a href="search.html"><li>Products</li></a>
+            <a href="login.html"><li>Login</li></a>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section id="hero" class="home">
+      <div class="container">
+        <div class="cntnt">
+          <h1>OUR NEW COLLECTION</h1>
+          <p>Experience the best of local craftsmanship and unique designs.</p>
+          <a href="search.html" class="btn">Shop Now</a>
+        </div>
+        <img src="img/model-heroSec.png" alt="" />
+        <div class="heroFlow">
+          <h4>LEXUS IS 500H F SPORT 2024</h4>
+        </div>
+      </div>
+      <div class="BigCircle">
+        <div class="borderCircle">
+          <div class="circle">
+            <img src="img/jacket model 1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bar">
+      <h1>SALES FOR 20%!!! WHAT ARE YOU WAITING FOR?!</h1>
+    </section>
+
+    <section id="trend" class="trend">
+      <div class="trend-container">
+        <div class="messiModel">
+          <img src="img/model3.png" class="center-img" />
+        </div>
+
+        <div class="messi-items">
+          <img
+            class="Items-circle"
+            src="img/tshirt3.png"
+            alt=""
+            onclick="popup(this)"
+          />
+          <div class="popup-Item">
+            <div class="pp-title">
+              <h2>69 T-Shirt 2026</h2>
+              <div class="pp-disc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  vel sapien eget nunc efficitur bibendum.
+                </p>
+                <div class="price-explore">
+                  <span>120$</span>
+                  <button class="btn-primary">Explore more</button>
+                </div>
+              </div>
+            </div>
+            <div class="pp-img">
+              <img src="img/tshirt3pp.png" alt="" />
+            </div>
+            <button class="close-btn" onclick="closePopup(this)">X</button>
+          </div>
+
+          <img
+            class="Items-circle"
+            src="img/pants3.png"
+            alt=""
+            onclick="popup(this)"
+          />
+          <div class="popup-Item">
+            <div class="pp-title">
+              <h2>Wideleg Jeans</h2>
+              <div class="pp-disc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  vel sapien eget nunc efficitur bibendum.
+                </p>
+                <div class="price-explore">
+                  <span>95$</span>
+                  <button class="btn-primary">Explore more</button>
+                </div>
+              </div>
+            </div>
+            <div class="pp-img">
+              <img src="img/pants3.png" alt="" />
+            </div>
+            <button class="close-btn" onclick="closePopup(this)">X</button>
+          </div>
+
+          <img
+            class="Items-circle"
+            src="img/shoes3.png"
+            alt=""
+            onclick="popup(this)"
+          />
+          <div class="popup-Item">
+            <div class="pp-title">
+              <h2>Shoes</h2>
+              <div class="pp-disc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  vel sapien eget nunc efficitur bibendum.
+                </p>
+                <div class="price-explore">
+                  <span>80$</span>
+                  <button class="btn-primary">Explore more</button>
+                </div>
+              </div>
+            </div>
+            <div class="pp-img">
+              <img src="img/shoes3.png" alt="" />
+            </div>
+            <button class="close-btn" onclick="closePopup(this)">X</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="trend-title">
+        <h1>TRENDING</h1>
+      </div>
+
+      <div class="trend-container">
+        <div class="messi-items">
+          <img
+            class="Items-circle"
+            src="img/tshirt2.png"
+            alt=""
+            onclick="popup(this)"
+          />
+          <div class="popup-Item">
+            <div class="pp-title">
+              <h2>60 T-Shirt 2026</h2>
+              <div class="pp-disc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  vel sapien eget nunc efficitur bibendum.
+                </p>
+                <div class="price-explore">
+                  <span>120$</span>
+                  <a href="itemDetails.html"><button class="btn-primary">Explore more</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="pp-img">
+              <img src="img/tshirt2pp.png" alt="" />
+            </div>
+            <button class="close-btn" onclick="closePopup(this)">X</button>
+          </div>
+
+          <img
+            class="Items-circle"
+            src="img/pants2.png"
+            alt=""
+            onclick="popup(this)"
+          />
+          <div class="popup-Item">
+            <div class="pp-title">
+              <h2>Sweatpants</h2>
+              <div class="pp-disc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  vel sapien eget nunc efficitur bibendum.
+                </p>
+                <div class="price-explore">
+                  <span>95$</span>
+                  <button class="btn-primary">Explore more</button>
+                </div>
+              </div>
+            </div>
+            <div class="pp-img">
+              <img src="img/pants2.png" alt="" />
+            </div>
+            <button class="close-btn" onclick="closePopup(this)">X</button>
+          </div>
+
+          <img
+            class="Items-circle"
+            src="img/shoes2.png"
+            alt=""
+            onclick="popup(this)"
+          />
+          <div class="popup-Item">
+            <div class="pp-title">
+              <h2>Adidas Shoes 2025</h2>
+              <div class="pp-disc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  vel sapien eget nunc efficitur bibendum.
+                </p>
+                <div class="price-explore">
+                  <span>80$</span>
+                  <button class="btn-primary">Explore more</button>
+                </div>
+              </div>
+            </div>
+            <div class="pp-img">
+              <img src="img/shoes2.png" alt="" />
+            </div>
+            <button class="close-btn" onclick="closePopup(this)">X</button>
+          </div>
+        </div>
+        <div class="messiModel">
+          <img src="img/model2.png" class="center-img" />
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
